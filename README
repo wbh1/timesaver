@@ -1,0 +1,18 @@
+The bash script is untested.
+The install script is incomplete.
+The powershell script might not work properly.
+The python scripts dont work with python 2.7 installed apparently.
+Good luck!
+
+Install python 3 and pip
+	https://www.python.org/ftp/python/3.5.2/python-3.5.2.exe
+Install selenium
+	http://selenium-python.readthedocs.io/installation.html
+	pip install selenium
+Install and setup the Firefox webdriver
+	https://developer.mozilla.org/en-US/docs/Mozilla/QA/Marionette/WebDriver
+	https://github.com/mozilla/geckodriver/releases
+	Extract the geckodriver executable to a location of your chosing
+	Add that location to the System PATH
+Enjoy
+	
