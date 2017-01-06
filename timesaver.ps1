@@ -1,19 +1,17 @@
-﻿#####---------------------------------------------------------------------------------------#####
-# Most of the code in this script has been borrowed from google and dlehrman's AccountsTool.ps1 #
-#####---------------------------------------------------------------------------------------#####
-
 # initiate function for an in or out punch
 function onePunch($luid, $pass) {
-    python .\timesaver_io.py $luid $pass;
+    py .\timesaver_io.py $luid $pass;
 }
 
 # initiate functions for lunch
 function teaTime($luid, $pass) {
-    python .\timesaver_occlunch.py $luid $pass;
+    py .\timesaver_occlunch.py $luid $pass;
 }
 
 function getFat($luid, $pass){
-	python .\timesaver_lunch.py $luid $pass;
+	py .\timesaver_io.py $luid $pass;
+	Start-Sleep 3600 # sleep for 1 hour
+	py .\timesaver_io.py $luid $pass;
 }
 
 # initiate functions to clock in and out for the entire day
